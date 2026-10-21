@@ -63,22 +63,12 @@ const experiences: Experience[] = [
   },
   {
     role: 'Software QA Engineer',
-    company: 'Karestan Javan',
+    company: 'Golsoft',
     location: 'Tehran, Iran',
     period: 'Jan 2017 – Jun 2019',
     bullets: [
       'Worked on a large-scale insurance software implementation with a Japanese consulting firm.',
       'Performed thorough manual testing of business logic, premium calculations, and configuration rules.',
-    ],
-  },
-  {
-    role: 'Part-time Researcher',
-    company: 'Amirkabir University of Technology — Research Center',
-    location: 'Tehran, Iran',
-    period: 'Jun 2014 – Dec 2016',
-    bullets: [
-      'Contributed to Industrial Engineering research and organizational performance improvement projects.',
-      'Conducted company restructuring analysis and identified operational efficiency opportunities.',
     ],
   },
 ]

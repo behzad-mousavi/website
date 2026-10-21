@@ -5,7 +5,7 @@
         <div>
           <div class="flex items-center gap-2 font-heading text-sm font-bold">
             <span class="flex h-7 w-7 items-center justify-center rounded-sm bg-accent text-accent-foreground text-xs">B</span>
-            Behzad Mousavi
+            Behzad Baladeh
           </div>
           <p class="mt-2 max-w-[32ch] text-sm leading-6 text-muted-foreground">Software engineer focused on backend systems and clean architecture.</p>
         </div>
@@ -22,13 +22,13 @@
             <div class="mono text-xs font-semibold tracking-widest text-muted-foreground">CONNECT</div>
             <ul class="mt-3 space-y-2 text-muted-foreground">
               <li><a href="https://github.com/behzad-mousavi" target="_blank" rel="noopener" class="hover:text-foreground">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/behzad-mousavi-129251aa/" target="_blank" rel="noopener" class="hover:text-foreground">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/behzad-baladeh-129251aa/" target="_blank" rel="noopener" class="hover:text-foreground">LinkedIn</a></li>
               <li><a href="mailto:behzad.mousavibaladeh@gmail.com" class="hover:text-foreground">Email</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="mt-8 border-t border-border pt-6 text-xs text-muted-foreground">© 2026 Behzad Mousavi. All rights reserved.</div>
+      <div class="mt-8 border-t border-border pt-6 text-xs text-muted-foreground">© 2026 Behzad Baladeh. All rights reserved.</div>
     </div>
   </footer>
 </template>
