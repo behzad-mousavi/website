@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "name": "web",
+            "path": "web"
+        },
+        {
+            "name": "backend",
+            "path": "backend"
+        },
+        {
+            "name": "design-system",
+            "path": "design-system"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/node_modules": true,
+            "**/.nuxt": true,
+            "**/.output": true,
+            "**/dist": true
+        },
+        "search.exclude": {
+            "**/node_modules": true,
+            "**/.nuxt": true,
+            "**/.output": true,
+            "**/dist": true
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "extensions": {
+        "recommendations": [
+            "Vue.volar",
+            "dbaeumer.vscode-eslint",
+            "bradlc.vscode-tailwindcss",
+            "Go.golang.go"
+        ]
+    }
+}

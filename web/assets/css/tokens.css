@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #0F172A;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #1E293B;
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #22C55E;
+  --color-on-accent: #020617;
+  --color-background: #020617;
+  --color-foreground: #F1F5F9;
+  --color-card: #0E1223;
+  --color-card-foreground: #F1F5F9;
+  --color-muted: #1A1E2F;
+  --color-muted-foreground: #94A3B8;
+  --color-border: #1E293B;
+  --color-border-strong: #334155;
+  --color-destructive: #EF4444;
+  --color-on-destructive: #FFFFFF;
+  --color-ring: #22C55E;
+
+  --syntax-bg: #0B1020;
+  --syntax-keyword: #C084FC;
+  --syntax-string: #4ADE80;
+  --syntax-function: #60A5FA;
+  --syntax-comment: #475569;
+  --syntax-number: #FB923C;
+  --syntax-type: #F472B6;
+  --syntax-operator: #94A3B8;
+  --syntax-punct: #64748B;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --font-heading: 'JetBrains Mono', monospace;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
+[data-theme="light"] {
+  --color-background: #F8FAFC;
+  --color-foreground: #0F172A;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0F172A;
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #64748B;
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+  --color-primary: #0F172A;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #1E293B;
+  --syntax-bg: #0F172A;
+  --syntax-comment: #64748B;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+  }
+}
+
+* { scrollbar-width: thin; scrollbar-color: var(--color-border-strong) transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); }
+::selection { background: var(--color-accent); color: var(--color-on-accent); }
+:focus-visible { outline: 2px solid var(--color-ring); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+code, pre, kbd { font-family: var(--font-heading); }

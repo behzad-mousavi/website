@@ -1,0 +1,16 @@
+{
+  "name": "forge-ops",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix web run dev",
+    "dev:api": "go run ./backend/cmd/server",
+    "dev": "concurrently \"npm:dev:web\" \"npm:dev:api\"",
+    "build:web": "npm --prefix web run generate",
+    "build": "npm run build:web",
+    "preview:web": "npm --prefix web run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

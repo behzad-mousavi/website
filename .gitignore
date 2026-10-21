@@ -1,0 +1,22 @@
+# deps
+node_modules/
+dist/
+.output/
+.nuxt/
+*.log
+
+# env
+.env
+.env.local
+
+# go
+backend/vendor/
+
+# os
+.DS_Store
+
+# ide
+.idea/
+
+# claude local skills
+.claude/
