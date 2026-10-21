@@ -16,9 +16,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Behzad Mousavi — Software Engineer',
+      title: 'Behzad Baladeh — Software Engineer',
       meta: [
-        { name: 'description', content: 'Behzad Mousavi — Software Engineer. Building reliable systems and shipping quality software.' },
+        { name: 'description', content: 'Behzad Baladeh — Software Engineer. Building reliable systems and shipping quality software.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       link: [
