@@ -7,7 +7,7 @@
             <span class="flex h-7 w-7 items-center justify-center rounded-sm bg-accent text-accent-foreground text-xs">B</span>
             Behzad Baladeh
           </div>
-          <p class="mt-2 max-w-[32ch] text-sm leading-6 text-muted-foreground">Software engineer focused on backend systems and clean architecture.</p>
+          <p class="mt-2 max-w-[32ch] text-sm leading-6 text-muted-foreground">Backend engineer building systems at scale with Go and distributed technologies.</p>
         </div>
         <div class="grid grid-cols-2 gap-8 text-sm md:grid-cols-2">
           <div>
