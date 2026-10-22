@@ -10,32 +10,29 @@ type Experience = {
 const experiences: Experience[] = [
   {
     role: 'Backend Software Engineer',
-    company: 'Boomerang App',
+    company: 'Boomerang',
     location: 'Tehran, Iran',
-    period: 'Jun 2025 – Present',
+    period: 'May 2025 – Present',
     bullets: [
-      'Refactored legacy backend services including User Authentication and Central Notification services observing clean architecture standards.',
-      'Developed a proxy service to reverse-proxy Telegram alerting notifications and adapt local push notification requests with Firebase SDK.',
-      'Improved product search by replacing simple SQL LIKE queries with ElasticSearch queries for a more engaging search experience.',
-      'Enhanced observability by deploying OpenTelemetry with Jaeger UI and exporting insightful spans across services.',
-      'Developed a sophisticated CRM panel for a private client with an independent auth system (ACL) and voucher management to award proportionate vouchers to active clients.',
-      'Designed transactional business processes for CRM and voucher systems, ensuring atomic updates and consistent state across related entities.',
-      'Built a daily sync job aggregating ClickHouse with the main operational database to form the company data warehouse.',
+      'Built Go services with MySQL, Redis, Elasticsearch, ClickHouse deployed via Docker.',
+      'Replaced slow SQL LIKE queries with Elasticsearch (match-phrase/fuzzy), added Redis caching—improved search accuracy and OCR result quality.',
+      'Developed backend for client promotions: 30M printable codes, JWT-based SMS login, monthly lottery (~100 RPM). Optimized MySQL with unique/composite indexes.',
+      'Set up observability stack (Prometheus, Grafana, OpenTelemetry, Jaeger) and configured ClickHouse data warehouse.',
+      'Built survey/CRM platform with multiple question types; connected CH-UI to AI via LiteLLM for analyst work.',
+      'Refactored services to clean/hexagonal architecture; built Telegram proxy service for push notifications via Firebase SDK.',
+      'Found and fixed race condition between cron job and session-result API using per-row locking and longer timeouts.',
     ],
   },
   {
     role: 'Backend Software Engineer',
-    company: 'Snapp',
+    company: 'Snapp (Driver Engagement & Retention)',
     location: 'Tehran, Iran',
     period: 'Jun 2022 – May 2025',
     bullets: [
-      'Developed and maintained critical backend systems including Drivers Incentive Program, Loyalty Program, Scoring & Badging System, and Performance Report Generator supporting over 5M daily rides.',
-      'Built services with a test-driven approach, ensuring high unit test coverage using Go testing and Testify.',
-      'Built and maintained Helm charts for application deployment; synchronized environments using ArgoCD.',
-      'Integrated time-series data storage with TimescaleDB for efficient performance tracking.',
-      'Visualized key performance metrics using Grafana and PromQL; integrated tracing with Jaeger and OpenTelemetry.',
-      'Designed scalable Redis caching layers handling over 20K RPM with < 50ms latency at p95.',
-      'Led load testing using K6 Operator to ensure resiliency under production traffic patterns.',
+      'Driver Incentive Program: Go services with PostgreSQL, Redis, NATS on Kubernetes. Cash rewards for ride/fare targets with recovery of missed events.',
+      'Persistent Redis cluster with cache-aside pattern for low-latency reward API; optimized MySQL queries for progress data serving.',
+      'Driver Rating System: Consumed passenger ratings from NATS. Implemented badge rules based on last 100 ratings, reduced response time 70ms→30ms and DB load 12.5→5 QPS via Redis caching.',
+      'Driver Performance Report: Daily reports aggregated nightly via cron job—covers completed/cancelled rides, income, rewards.',
     ],
   },
   {
@@ -44,11 +41,9 @@ const experiences: Experience[] = [
     location: 'Tehran, Iran',
     period: 'Mar 2021 – Jun 2022',
     bullets: [
-      'Conducted manual feature and regression testing plans for driver applications.',
-      'Designed test strategies, reviewed QA documentation, and mentored junior QA engineers.',
-      'Developed Python scripts to automate API and backend testing workflows.',
-      'Built and executed load testing scenarios using K6.',
-      'Collaborated with cross-functional teams to ensure release quality and catch defects early.',
+      'Led manual feature/regression testing for driver apps; planned test cycles and mentored junior QA engineers.',
+      'Wrote Python API tests to accelerate backend testing workflows.',
+      'Helped redesign QA organization—added engineering manager role, split teams under EMs reporting to QA director.',
     ],
   },
   {
@@ -58,17 +53,17 @@ const experiences: Experience[] = [
     period: 'Jul 2019 – Mar 2021',
     bullets: [
       'Performed manual feature and regression testing for driver applications.',
-      'Designed sophisticated test case scenarios covering main workflows and tricky edge cases.',
+      'Designed test cases covering main workflows and edge cases.',
     ],
   },
   {
-    role: 'Software QA Engineer',
-    company: 'Golsoft',
+    role: 'Software QA Engineer & Business Analyst',
+    company: 'Golsoft (Insurance Software)',
     location: 'Tehran, Iran',
     period: 'Jan 2017 – Jun 2019',
     bullets: [
-      'Worked on a large-scale insurance software implementation with a Japanese consulting firm.',
-      'Performed thorough manual testing of business logic, premium calculations, and configuration rules.',
+      'Localized NTT Data insurance platform: translation, client-specific rules/calculations, on-prem deployment.',
+      'Manually tested premium/claim business logic; stepped in as lead BA when team lead departed.',
     ],
   },
 ]
@@ -79,7 +74,7 @@ const experiences: Experience[] = [
     <div class="mb-8">
       <p class="mono text-xs font-semibold tracking-widest text-accent">EXPERIENCE</p>
       <h2 class="mt-2 font-heading text-2xl font-bold tracking-tight md:text-3xl">Where I've worked</h2>
-      <p class="mt-2 max-w-[52ch] text-sm leading-6 text-muted-foreground">A timeline of roles building and testing systems at scale.</p>
+      <p class="mt-2 max-w-[52ch] text-sm leading-6 text-muted-foreground">Backend engineer building systems at scale with Go, Rust, and distributed technologies.</p>
     </div>
 
     <div class="relative">
