@@ -10,7 +10,7 @@ type Experience = {
 const experiences: Experience[] = [
   {
     role: 'Backend Software Engineer',
-    company: 'Boomerang',
+    company: 'Boomerang (Grocery Cashback Platform)',
     location: 'Tehran, Iran',
     period: 'May 2025 – Present',
     bullets: [
@@ -25,7 +25,7 @@ const experiences: Experience[] = [
   },
   {
     role: 'Backend Software Engineer',
-    company: 'Snapp (Driver Engagement & Retention)',
+    company: 'Snapp (Ride-hailing)',
     location: 'Tehran, Iran',
     period: 'Jun 2022 – May 2025',
     bullets: [
@@ -74,7 +74,7 @@ const experiences: Experience[] = [
     <div class="mb-8">
       <p class="mono text-xs font-semibold tracking-widest text-accent">EXPERIENCE</p>
       <h2 class="mt-2 font-heading text-2xl font-bold tracking-tight md:text-3xl">Where I've worked</h2>
-      <p class="mt-2 max-w-[52ch] text-sm leading-6 text-muted-foreground">Backend engineer building systems at scale with Go, Rust, and distributed technologies.</p>
+      <p class="mt-2 max-w-[52ch] text-sm leading-6 text-muted-foreground">Backend engineer building systems at scale with Go and distributed technologies.</p>
     </div>
 
     <div class="relative">
